@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="fil"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MuMu Player System Requirements Check - subukan kung kayang patakbuhin ng iyong PC ang Android emulator</title>
+<meta name="description" content="Buksan at subukan kaagad: binabasa ng page na ito ang iyong mga CPU core, RAM, GPU (WebGL) at screen, pagkatapos ay susuriin ang mga ito ayon sa mga opisyal na kinakailangan ng MuMu Player (4 na core + VT, 4GB+, GTX 950+) upang malaman kung naipatakbo ng iyong PC ang Android emulator nang maayos. Gumagana nang lokal, walang na-upload.">
+<meta name="author" content="陈默">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="website"><meta property="og:title" content="MuMu Player System Requirements Check - subukan kung kayang patakbuhin ng iyong PC ang Android emulator">
+<meta property="og:description" content="Buksan at subukan kaagad: binabasa ng page na ito ang iyong mga CPU core, RAM, GPU (WebGL) at screen, pagkatapos ay susuriin ang mga ito ayon sa mga opisyal na kinakailangan ng MuMu Player (4 na core + VT, 4GB+, GTX 950+) upang malaman kung naipatakbo ng iyong PC ang Android emulator nang maayos. Gumagana nang lokal, walang na-upload.">
+<meta property="og:locale" content="fil_PH"><meta property="og:image" content="https://humanbrian.github.io/img/cover.png">
+<meta property="og:image:width" content="1120"><meta property="og:image:height" content="360">
+<link rel="canonical" href="https://humanbrian.github.io/fil/">
+<link rel="alternate" hreflang="zh-Hans" href="https://humanbrian.github.io/">
+<link rel="alternate" hreflang="en" href="https://humanbrian.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://humanbrian.github.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://humanbrian.github.io/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://humanbrian.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://humanbrian.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://humanbrian.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://humanbrian.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://humanbrian.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://humanbrian.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://humanbrian.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://humanbrian.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://humanbrian.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "MuMu Player System Requirements Check",
+   "url": "https://humanbrian.github.io/fil/",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web browser",
+   "inLanguage": "fil",
+   "description": "Buksan at subukan kaagad: binabasa ng page na ito ang iyong mga CPU core, RAM, GPU (WebGL) at screen, pagkatapos ay susuriin ang mga ito ayon sa mga opisyal na kinakailangan ng MuMu Player (4 na core + VT, 4GB+, GTX 950+) upang malaman kung naipatakbo ng iyong PC ang Android emulator nang maayos. Gumagana nang lokal, walang na-upload.",
+   "isAccessibleForFree": true,
+   "browserRequirements": "Requires JavaScript and WebGL",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "陈默",
+    "url": "https://humanbrian.github.io/fil/about-chenmo/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "fil",
+   "url": "https://humanbrian.github.io/fil/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Kailangan ba ng MuMu Player ng malakas na PC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hindi naman. Ang opisyal na minimum ay isang dual-core CPU, 4GB RAM at isang GTX 950-class GPU; ngunit para sa makinis na multi-instancing, inirerekomenda ang 4+ core, 8GB RAM at VT na pinagana."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bakit kailangang paganahin ang VT (virtualization)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hinahayaan ng VT (Intel VT / AMD SVM) ang MuMu na gawing virtual ang Android nang mahusay. Sinasabi ng vendor na ang pagpapagana ng VT ay makabuluhang nagpapabuti sa pagganap at binabawasan ang lag; kung wala ito ang emulator ay kapansin-pansing mas mabagal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Maaari bang makita ng browser kung pinagana ang VT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hindi. Hindi mabasa ng isang web page ang iyong BIOS virtualization state. Suriin ang Task Manager, Performance, CPU para sa Virtualization Enabled, o paganahin ito sa BIOS."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tumpak ba ang tseke na ito?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nagbabasa ito ng mga specs na nakikita ng browser (mga core, memory, WebGL GPU name, resolution) para sa mabilis na paghahambing. Tandaan na ang memorya na iniulat ng browser ay nilimitahan sa 8GB at hindi mababasa ang VT, kaya ituring ang impormasyon ng system bilang may awtoridad."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Maaari bang tumakbo ang 4GB ng RAM ng MuMu Player?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Maaari itong magpatakbo ng isang pagkakataon, ngunit ang multi-instancing o malalaking laro ay magiging mahigpit. Inirerekomenda ang 8GB o higit pa para sa stable na multi-instancing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Ina-upload ba ng check ang impormasyon ng aking PC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hindi. Lahat ay tumatakbo nang lokal sa iyong browser - walang na-upload, nakaimbak o naka-install."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mahawakan ba ito ng integrated graphics?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mga magaan na laro, oo; para sa mataas na kalidad o mataas na mga frame rate, inirerekomenda ang isang nakalaang GPU na GTX 1050 o mas mataas."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head><body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <strong>Filipino</strong> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>MuMu Player System Requirements Check</h1>
+<p class="byline"><a href="/fil/about-chenmo/" rel="author">陈默</a> · Na-update noong 2026-06</p>
+<p>Gustong maglaro ng mga laro sa Android sa iyong PC ngunit nag-aalalang hindi ito makakasabay? Isa itong purong web tool: buksan ito at awtomatiko nitong binabasa ang iyong mga core ng processor, memorya, graphics card at screen, pagkatapos ay ihahambing ang mga ito sa mga opisyal na kinakailangan ng MuMu Player upang sabihin sa iyo kung maaari kang tumakbo at multi-instance nang maayos. Lahat ay tumatakbo nang lokal sa iyong browser - walang na-upload o naka-install.</p>
+<figure><picture><source type="image/webp" srcset="/img/cover.webp"><img src="/img/cover.png" alt="MuMu Player requirements checker banner" width="1120" height="360" fetchpriority="high"></picture><figcaption>Tingnan online kung natutugunan ng iyong PC ang mga kinakailangan sa MuMu Player</figcaption></figure>
+<h2>Maaari bang patakbuhin ng iyong PC ang MuMu Player nang maayos?</h2><p>Awtomatikong inililista ng card sa ibaba ang mga detalye ng iyong PC key at inihahambing ang bawat isa sa opisyal na minimum at inirerekomendang mga kinakailangan ng MuMu. Ang ibig sabihin ng berde ay nakakatugon ito sa bar, ang ibig sabihin ng amber ay borderline, ang ibig sabihin ng pula ay nasa ibaba ng spec. Ang mga item na hindi mabasa ng browser (gaya ng kung naka-on ang VT virtualization) ay naka-flag para sa manu-manong pagsusuri.</p>
+<div class="rk" id="rk"><div id="rk-out">Tinutukoy ang iyong device...</div></div>
+<h2>MuMu Player opisyal na kinakailangan ng system</h2><p>Ayon sa site ng MuMu emulator at opisyal na kinakailangan ng system ng MuMuPlayer, ang Windows bar ay halos ang mga sumusunod. Ang 4-core na CPU na may VT na pinagana at 4GB o higit pa sa RAM ang mga susi sa maayos na pagtakbo; Inirerekomenda ang 8GB ng RAM at isang nakalaang GPU para sa mas magandang karanasan sa maraming pagkakataon.</p>
+<table class="req"><tr><th>item</th><th>pinakamababa</th><th>Inirerekomenda</th></tr><tr><td>Operating system</td><td>Windows 7 / 8 / 10</td><td>Windows 10 / 11 64-bit</td></tr><tr><td>Processor (CPU)</td><td>Dual-core o mas mataas</td><td>i5-7500 / 4 na core o higit pa + VT pinagana</td></tr><tr><td>Memorya (RAM)</td><td>4 GB</td><td>8 GB o higit pa</td></tr><tr><td>Graphics (GPU)</td><td>GTX 950 klase</td><td>GTX 1050 o mas mataas / nakatuong GPU</td></tr><tr><td>Graphics API</td><td>OpenGL 4.x</td><td>DirectX 11.0 / OpenGL 4.x</td></tr><tr><td>Puwang ng disk</td><td>Mga 5 GB na libre</td><td>SSD + 5 GB o higit pa</td></tr></table>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Device readiness detection flow" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">Readiness detection flow</text>
+<rect x="20" y="44" width="150" height="60" rx="10" fill="#eef4ff" stroke="#cfe0ff"/><text x="95" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#1d4ed8">Read this PC</text><text x="95" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#555">cores / RAM / GPU</text>
+<path d="M170 74 H210" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="210" y="44" width="160" height="60" rx="10" fill="#f7f8fb" stroke="#e2e8f0"/><text x="290" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#334155">Compare to</text><text x="290" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#64748b">MuMu requirements</text>
+<path d="M370 74 H410" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="410" y="44" width="150" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="485" y="78" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#047857">Verdict</text>
+<g font-family="system-ui,Arial" font-size="12">
+<rect x="120" y="150" width="160" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="200" y="178" text-anchor="middle" font-weight="700" fill="#047857">Ready</text><text x="200" y="197" text-anchor="middle" fill="#555" font-size="11">4+ cores, 8GB, dGPU</text>
+<rect x="290" y="150" width="160" height="60" rx="10" fill="#fffbeb" stroke="#fde68a"/><text x="370" y="178" text-anchor="middle" font-weight="700" fill="#92400e">Borderline</text><text x="370" y="197" text-anchor="middle" fill="#555" font-size="11">meets minimum</text>
+<rect x="460" y="150" width="150" height="60" rx="10" fill="#fef2f2" stroke="#fecaca"/><text x="535" y="178" text-anchor="middle" font-weight="700" fill="#991b1b">Below spec</text><text x="535" y="197" text-anchor="middle" fill="#555" font-size="11">may stutter</text>
+</g>
+<path d="M485 104 V128 H200 V150" stroke="#10b981" stroke-width="1.6" fill="none"/><path d="M485 128 H370 V150" stroke="#f59e0b" stroke-width="1.6" fill="none"/><path d="M485 128 H535 V150" stroke="#ef4444" stroke-width="1.6" fill="none"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+</svg><figcaption>Fig 1: daloy ng pagtuklas - basahin ang iyong mga spec, ihambing sa mga opisyal na kinakailangan, ibalik ang hatol sa pagiging handa.</figcaption></figure>
+<h2>Paano naaapektuhan ng bawat sukatan ng hardware ang pagiging maayos</h2><p>Tinutukoy ng mga CPU core at VT kung gaano kahusay ang pag-virtualize ng emulator sa Android at kung gaano karaming mga pagkakataon ang maaari mong patakbuhin; Nagpapasya ang RAM kung gaano karaming mga app at clone ang tumatakbo nang sabay-sabay; ang GPU ay nagtutulak ng pag-render at mga high-frame-rate na laro; ang isang SSD ay nagpapabilis ng paglo-load. Ang anumang mahinang link ay nagiging bottleneck.</p>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How each hardware part affects the emulator" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">What each part affects</text>
+<g font-family="system-ui,Arial" font-size="12.5">
+<rect x="20" y="44" width="160" height="86" rx="10" fill="#ffedd5" stroke="#fed7aa"/><text x="34" y="68" font-weight="700" fill="#9a3412">CPU + VT</text><text x="34" y="90" fill="#444" font-size="11">virtualization</text><text x="34" y="108" fill="#444" font-size="11">multi-instance count</text>
+<rect x="195" y="44" width="160" height="86" rx="10" fill="#fef9c3" stroke="#fde68a"/><text x="209" y="68" font-weight="700" fill="#854d0e">RAM</text><text x="209" y="90" fill="#444" font-size="11">apps open at once</text><text x="209" y="108" fill="#444" font-size="11">number of clones</text>
+<rect x="370" y="44" width="160" height="86" rx="10" fill="#dbeafe" stroke="#bfdbfe"/><text x="384" y="68" font-weight="700" fill="#1d4ed8">GPU</text><text x="384" y="90" fill="#444" font-size="11">rendering / FPS</text><text x="384" y="108" fill="#444" font-size="11">high-end games</text>
+<rect x="545" y="44" width="155" height="86" rx="10" fill="#dcfce7" stroke="#bbf7d0"/><text x="559" y="68" font-weight="700" fill="#15803d">Disk (SSD)</text><text x="559" y="90" fill="#444" font-size="11">load speed</text><text x="559" y="108" fill="#444" font-size="11">install ~5GB</text>
+</g>
+<rect x="20" y="150" width="680" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="36" y="176" font-family="system-ui,Arial" font-size="13" font-weight="700" fill="#334155">MuMu Player (Android emulator)</text>
+<text x="36" y="196" font-family="system-ui,Arial" font-size="11.5" fill="#64748b">Any single weak part becomes the bottleneck for smoothness and multi-instancing.</text>
+<defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+<path d="M100 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M275 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M450 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M622 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/>
+</svg><figcaption>Fig 2: kung paano nakakaapekto ang CPU, RAM, GPU at disk sa MuMu Player sa smoothness at multi-instancing.</figcaption></figure>
+<figure><picture><source type="image/webp" srcset="/img/specs.webp"><img src="/img/specs.png" alt="MuMu Player minimum kumpara sa inirekumendang chart ng mga spec" width="1120" height="600" loading="lazy"></picture><figcaption>MuMu Player para sa Windows: minimum at inirerekomendang mga spec sa isang sulyap</figcaption></figure>
+<section id="data2026">
+<h2>2026 na pagtatantya ng kahandaan para sa mga mainstream na PC</h2><p>Gamit ang Steam Hardware Survey mula Mayo 2026 (isang sample ng gamer), halos matantya namin kung gaano karaming mga PC ang nag-clear sa MuMu Player bar ngayon: humigit-kumulang 80% ay mayroon nang 4 o higit pang mga core, humigit-kumulang 78% ay may 16GB o higit pa sa RAM, at higit sa 90% ay nagpapatakbo ng 64-bit na Windows 10/11. Sa madaling salita, karamihan sa mga kamakailang PC ay mayroon nang hardware base upang patakbuhin nang maayos ang MuMu.</p>
+<table class="data9"><tr><th>item</th><th>2026</th></tr><tr><td>Ibahagi sa 4+ na CPU core (Steam 2026-05)</td><td>≈ 79.5%</td></tr><tr><td>Ibahagi sa 16GB+ RAM</td><td>78.0%</td></tr><tr><td>Ibahagi sa 64-bit Windows 10/11</td><td>93.8%</td></tr><tr><td>Ibahagi sa 1080p bilang pangunahing resolution</td><td>51.9%</td></tr></table>
+<p class="note" data-role="estimate-note">Tantyahin, hindi unang-kamay: ang mga numero ay nagmula sa Steam Hardware Survey (isang gamer-skewed sample, hindi lahat ng PC); ang mga ito ay isang sanggunian sa pagiging handa-landscape lamang at hindi nagpapakita ng sukat ng iyong sariling makina.</p></section>
+<div class="cta"><h2>I-download ang MuMu Player</h2><p>Tingnan ang specs? Kunin ang pinakabagong MuMu Player mula mismo sa opisyal na pahina ng pag-download at maglaro ng mga laro sa Android nang libre:</p><a class="dl" href="https://mumuemulator.com/download/">I-download ang MuMu Player (opisyal)</a></div>
+<h2>Mga madalas itanong</h2><details><summary>Kailangan ba ng MuMu Player ng malakas na PC?</summary><p>Hindi naman. Ang opisyal na minimum ay isang dual-core CPU, 4GB RAM at isang GTX 950-class GPU; ngunit para sa makinis na multi-instancing, inirerekomenda ang 4+ core, 8GB RAM at VT na pinagana.</p></details><details><summary>Bakit kailangang paganahin ang VT (virtualization)?</summary><p>Hinahayaan ng VT (Intel VT / AMD SVM) ang MuMu na gawing virtual ang Android nang mahusay. Sinasabi ng vendor na ang pagpapagana ng VT ay makabuluhang nagpapabuti sa pagganap at binabawasan ang lag; kung wala ito ang emulator ay kapansin-pansing mas mabagal.</p></details><details><summary>Maaari bang makita ng browser kung pinagana ang VT?</summary><p>Hindi. Hindi mabasa ng isang web page ang iyong BIOS virtualization state. Suriin ang Task Manager, Performance, CPU para sa Virtualization Enabled, o paganahin ito sa BIOS.</p></details><details><summary>Tumpak ba ang tseke na ito?</summary><p>Nagbabasa ito ng mga specs na nakikita ng browser (mga core, memory, WebGL GPU name, resolution) para sa mabilis na paghahambing. Tandaan na ang memorya na iniulat ng browser ay nilimitahan sa 8GB at hindi mababasa ang VT, kaya ituring ang impormasyon ng system bilang may awtoridad.</p></details><details><summary>Maaari bang tumakbo ang 4GB ng RAM ng MuMu Player?</summary><p>Maaari itong magpatakbo ng isang pagkakataon, ngunit ang multi-instancing o malalaking laro ay magiging mahigpit. Inirerekomenda ang 8GB o higit pa para sa stable na multi-instancing.</p></details><details><summary>Ina-upload ba ng check ang impormasyon ng aking PC?</summary><p>Hindi. Lahat ay tumatakbo nang lokal sa iyong browser - walang na-upload, nakaimbak o naka-install.</p></details><details><summary>Mahawakan ba ito ng integrated graphics?</summary><p>Mga magaan na laro, oo; para sa mataas na kalidad o mataas na mga frame rate, inirerekomenda ang isang nakalaang GPU na GTX 1050 o mas mataas.</p></details>
+<h2>Mabilis na real-world na mga pagsusuri</h2><ul class="scenes"><li>Ang mga core ay nagpapakita ng 2 at gusto mo ng multi-instance: unang kumpirmahin ang VT ay naka-on; Nahihirapan ang 2 core sa multi-instancing, kaya mas gusto ang isang instance o mag-upgrade sa 4 o higit pang mga core.</li><li>4GB RAM lamang: ang isang solong mas magaan na laro ay maayos; para sa ilang clone o background idling, magdagdag ng hanggang 8GB o higit pa.</li><li>Ang WebGL ay nagpapakita ng software rendering (SwiftShader): ang browser ay walang magagamit na GPU o hardware acceleration, kaya ang emulator ay magiging mabagal; paganahin ang hardware acceleration at i-update muna ang iyong GPU driver.</li><li>Ang laptop ay may discrete GPU ngunit nakikita ng tseke ang Intel integrated graphics: maaaring gamitin ng browser ang iGPU; tiyaking ginagamit ng MuMu ang discrete GPU (itakda ito sa GPU control panel o mga setting ng Windows graphics).</li></ul>
+<div class="related"><h2>Kaugnay</h2><ul>
+<li><a href="/fil/about-chenmo/">Tungkol sa may-akda: Chen Mo</a></li>
+<li><a href="https://www.mumuplayer.com/" rel="nofollow">MuMuPlayer official system requirements</a></li>
+<li><a href="https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam" rel="nofollow">Steam Hardware Survey</a></li>
+<li><a href="https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency" rel="nofollow">MDN: navigator.hardwareConcurrency</a></li>
+</ul></div>
+</main>
+<footer>Compiled mula sa MuMu emulator site at MuMuPlayer opisyal na kinakailangan ng system, kasama ang Steam 2026 Hardware Survey; Ang pagtuklas ay gumagamit ng mga karaniwang browser API at para sa sanggunian lamang.<br>Ni Chen Mo · review editor · MIT License</footer>
+</div>
+<script>window.LABELS={"metric": "Sukatan", "need": "Kailangan ng MuMu", "yours": "Iyong PC", "detecting": "Tinutukoy ang iyong device...", "unknown": "Hindi kilala", "verdict_ready": "Handa: tumatakbo nang maayos", "verdict_marginal": "Borderline: puwedeng laruin, pinapayuhan ang pag-upgrade", "verdict_poor": "Below spec: maaaring mautal", "advice_ready": "Ang iyong PC ay nakakatugon sa MuMu na inirerekumendang mga spec - tumakbo at multi-instance na mga laro sa Android nang may kumpiyansa.", "advice_marginal": "Nakakatugon sa minimum ngunit mababa ang ilang sukatan; ang isang solong mas magaan na laro ay mainam, ang multi-instancing o malalaking laro ay maaaring nauutal.", "advice_poor": "Ang ilang pangunahing sukatan ay mas mababa sa minimum; asahan ang kapansin-pansing pagkautal - pag-upgrade, o paganahin muna ang VT at hardware acceleration.", "m_cores": "Mga lohikal na core ng CPU", "m_mem": "Memorya (nakikita ng browser)", "m_gpu": "Mga graphic (WebGL)", "m_screen": "Resolusyon ng screen", "m_os": "OS / browser", "vt_note": "Tandaan: hindi mabasa ng browser kung naka-on ang virtualization ng VT; suriin ang Task Manager o BIOS.", "st_ok": "OK", "st_warn": "Borderline", "st_low": "Mababa"};</script><script src="/app.js"></script>
+</body></html>
