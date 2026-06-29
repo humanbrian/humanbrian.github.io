@@ -1,0 +1,32 @@
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,"Segoe UI",Arial,"Noto Sans",sans-serif;line-height:1.75;color:#1d1d1f;background:#f5f5f7;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:26px 18px}
+main{background:#fff;border-radius:16px;padding:22px 26px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+h1{margin:.2em 0;font-size:26px}h2{font-size:19px;margin-top:30px;border-top:1px solid #eee;padding-top:18px}
+.lang{font-size:13px;color:#888;margin-bottom:8px;line-height:2}.lang a{text-decoration:none;color:#3485ff}
+.byline{font-size:13px;color:#666;margin:0 0 14px}.byline a{color:#3485ff;text-decoration:none}
+p{margin:.6em 0}a{color:#3485ff}
+.rk{border:1px solid #e6e9f0;border-radius:14px;padding:16px;margin:16px 0;background:#fafbff}
+.verdict{border-radius:10px;padding:12px 14px;margin-bottom:10px;border:1px solid}
+.verdict b{font-size:16px}.verdict p{margin:.3em 0 0;font-size:14px}
+.verdict.ok{background:#ecfdf5;border-color:#a7f3d0;color:#065f46}
+.verdict.warn{background:#fffbeb;border-color:#fde68a;color:#92400e}
+.verdict.low{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+table{border-collapse:collapse;width:100%;margin-top:8px;font-size:13.5px}
+td,th{border-bottom:1px solid #eef0f4;padding:8px;text-align:left;vertical-align:top}
+th{color:#555;font-weight:600;background:#f7f8fb}
+.dtbl td.need{color:#888}
+.bdg{display:inline-block;padding:2px 9px;border-radius:20px;font-size:12px;font-weight:600}
+.bdg.ok{background:#d1fae5;color:#065f46}.bdg.warn{background:#fef3c7;color:#92400e}
+.bdg.low{background:#fee2e2;color:#991b1b}.bdg.unk{background:#eef0f4;color:#777}
+.vtnote{font-size:12px;color:#888;margin-top:8px}
+figure{margin:18px 0}figure img{width:100%;height:auto;border-radius:12px;border:1px solid #eee}
+figcaption{color:#888;font-size:12.5px;text-align:center;margin-top:6px}
+.req th,.req td{font-size:13.5px}
+ul.scenes li{margin:8px 0}
+.data9 caption{caption-side:top;text-align:left;color:#888;font-size:12px;margin-bottom:4px}
+.cta{margin:22px 0;padding:16px 18px;border-radius:14px;background:linear-gradient(110deg,#3485ff,#1e63d6);color:#fff}
+.cta h2{border:0;margin:0 0 6px;color:#fff;padding:0}.cta p{margin:.3em 0;font-size:14px;color:#eaf1ff}
+.cta a.dl{display:inline-block;margin-top:8px;background:#fff;color:#1e63d6;font-weight:700;padding:9px 18px;border-radius:10px;text-decoration:none}
+.related{margin-top:26px;border-top:2px solid #eee;padding-top:14px}.related ul{padding-left:18px}
+footer{color:#888;font-size:12.5px;margin-top:26px;text-align:center;line-height:1.7}
+.note{font-size:12px;color:#999}
