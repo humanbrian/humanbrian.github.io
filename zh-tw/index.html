@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MuMu模擬器配置要求檢測 - 線上測電腦能否流暢執行安卓模擬器</title>
+<meta name="description" content="開啟即測：自動讀取你電腦的 CPU 核數、記憶體、顯示卡(WebGL)與解析度，對照 MuMu 模擬器官方配置要求(4核+VT、4GB起、GTX950+)，判斷能否流暢多開執行安卓遊戲。全程本地瀏覽器完成，不上傳不安裝。">
+<meta name="author" content="陈默">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="website"><meta property="og:title" content="MuMu模擬器配置要求檢測 - 線上測電腦能否流暢執行安卓模擬器">
+<meta property="og:description" content="開啟即測：自動讀取你電腦的 CPU 核數、記憶體、顯示卡(WebGL)與解析度，對照 MuMu 模擬器官方配置要求(4核+VT、4GB起、GTX950+)，判斷能否流暢多開執行安卓遊戲。全程本地瀏覽器完成，不上傳不安裝。">
+<meta property="og:locale" content="zh_TW"><meta property="og:image" content="https://humanbrian.github.io/img/cover.png">
+<meta property="og:image:width" content="1120"><meta property="og:image:height" content="360">
+<link rel="canonical" href="https://humanbrian.github.io/zh-tw/">
+<link rel="alternate" hreflang="zh-Hans" href="https://humanbrian.github.io/">
+<link rel="alternate" hreflang="en" href="https://humanbrian.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://humanbrian.github.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://humanbrian.github.io/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://humanbrian.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://humanbrian.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://humanbrian.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://humanbrian.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://humanbrian.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://humanbrian.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://humanbrian.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://humanbrian.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://humanbrian.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "MuMu 模擬器配置要求線上檢測",
+   "url": "https://humanbrian.github.io/zh-tw/",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web browser",
+   "inLanguage": "zh-Hant",
+   "description": "開啟即測：自動讀取你電腦的 CPU 核數、記憶體、顯示卡(WebGL)與解析度，對照 MuMu 模擬器官方配置要求(4核+VT、4GB起、GTX950+)，判斷能否流暢多開執行安卓遊戲。全程本地瀏覽器完成，不上傳不安裝。",
+   "isAccessibleForFree": true,
+   "browserRequirements": "Requires JavaScript and WebGL",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "陈默",
+    "url": "https://humanbrian.github.io/zh-tw/about-chenmo/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "zh-Hant",
+   "url": "https://humanbrian.github.io/zh-tw/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "MuMu 模擬器對電腦配置要求高嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不算高。官方最低為雙核 CPU、4GB 記憶體、GTX 950 級顯示卡；但要流暢多開，建議 4 核以上、8GB 記憶體並開啟 VT 虛擬化。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "為什麼一定要開啟 VT（虛擬化）？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "VT（Intel VT / AMD SVM）讓 MuMu 高效虛擬化安卓系統。官方明確開啟 VT 能顯著提升效能、減少卡頓；未開啟時會明顯變慢。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "瀏覽器能檢測我是否開啟了 VT 嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不能。網頁無法讀取 BIOS 虛擬化狀態。請在 Windows 工作管理員→效能→CPU 檢視“虛擬化:已啟用”，或進 BIOS 開啟。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "這個檢測準確嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "它讀取瀏覽器可見的引數（核數、記憶體、WebGL 顯示卡名、解析度）做對照，可作初步參考；記憶體經瀏覽器上限為 8GB、且無法讀 VT，實際以系統資訊為準。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "4GB 記憶體能執行 MuMu 模擬器嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "能執行單開，但多開或大型遊戲會吃緊。推薦 8GB 以上以獲得穩定多開體驗。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "檢測會上傳我的電腦資訊嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不會。全部檢測在你本地瀏覽器內完成，不上傳、不儲存、不安裝任何程式。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "整合顯示卡能玩嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "輕度遊戲可以；高畫質或高幀率遊戲建議用 GTX 1050 以上的獨立顯示卡。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head><body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <strong>繁體中文</strong> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>MuMu 模擬器配置要求線上檢測</h1>
+<p class="byline"><a href="/zh-tw/about-chenmo/" rel="author">陈默</a> · 更新於 2026-06</p>
+<p>想在電腦上玩安卓手遊、又擔心帶不動？本頁是一個純網頁工具，開啟即自動讀取你這臺電腦的處理器核數、記憶體、顯示卡與螢幕資訊，並對照 MuMu 模擬器的官方配置要求，告訴你能否流暢執行與多開。全部在本地瀏覽器完成，不上傳、不安裝。</p>
+<figure><picture><source type="image/webp" srcset="/img/cover.webp"><img src="/img/cover.png" alt="MuMu 模擬器配置檢測工具橫幅" width="1120" height="360" fetchpriority="high"></picture><figcaption>線上檢測電腦是否滿足 MuMu 模擬器執行配置</figcaption></figure>
+<h2>你的電腦能流暢執行 MuMu 模擬器嗎？</h2><p>下面的檢測卡片會自動列出你電腦的關鍵引數，並與 MuMu 官方最低/推薦配置逐項對比。綠色表示達標、黃色表示勉強、紅色表示偏低。瀏覽器讀不到的項（如是否開啟 VT 虛擬化）會標註為需手動核對。</p>
+<div class="rk" id="rk"><div id="rk-out">正在檢測你的裝置…</div></div>
+<h2>MuMu 模擬器官方配置要求</h2><p>據 MuMu 模擬器官網與 MuMuPlayer 官方系統需求，Windows 版的門檻大致如下。其中 4 核處理器並開啟 VT、4GB 以上記憶體是流暢執行的關鍵，推薦 8GB 記憶體與獨立顯示卡以獲得更好的多開體驗。</p>
+<table class="req"><tr><th>專案</th><th>最低配置</th><th>推薦配置</th></tr><tr><td>作業系統</td><td>Windows 7 / 8 / 10</td><td>Windows 10 / 11 64-bit</td></tr><tr><td>處理器(CPU)</td><td>雙核以上</td><td>i5-7500 / 4 核以上 + 開啟 VT</td></tr><tr><td>記憶體(RAM)</td><td>4 GB</td><td>8 GB 以上</td></tr><tr><td>顯示卡(GPU)</td><td>GTX 950 級別</td><td>GTX 1050 以上 / 獨立顯示卡</td></tr><tr><td>圖形介面</td><td>OpenGL 4.x</td><td>DirectX 11.0 / OpenGL 4.x</td></tr><tr><td>磁碟空間</td><td>約 5 GB 可用</td><td>SSD + 5 GB 以上</td></tr></table>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Device readiness detection flow" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">Readiness detection flow</text>
+<rect x="20" y="44" width="150" height="60" rx="10" fill="#eef4ff" stroke="#cfe0ff"/><text x="95" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#1d4ed8">Read this PC</text><text x="95" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#555">cores / RAM / GPU</text>
+<path d="M170 74 H210" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="210" y="44" width="160" height="60" rx="10" fill="#f7f8fb" stroke="#e2e8f0"/><text x="290" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#334155">Compare to</text><text x="290" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#64748b">MuMu requirements</text>
+<path d="M370 74 H410" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="410" y="44" width="150" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="485" y="78" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#047857">Verdict</text>
+<g font-family="system-ui,Arial" font-size="12">
+<rect x="120" y="150" width="160" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="200" y="178" text-anchor="middle" font-weight="700" fill="#047857">Ready</text><text x="200" y="197" text-anchor="middle" fill="#555" font-size="11">4+ cores, 8GB, dGPU</text>
+<rect x="290" y="150" width="160" height="60" rx="10" fill="#fffbeb" stroke="#fde68a"/><text x="370" y="178" text-anchor="middle" font-weight="700" fill="#92400e">Borderline</text><text x="370" y="197" text-anchor="middle" fill="#555" font-size="11">meets minimum</text>
+<rect x="460" y="150" width="150" height="60" rx="10" fill="#fef2f2" stroke="#fecaca"/><text x="535" y="178" text-anchor="middle" font-weight="700" fill="#991b1b">Below spec</text><text x="535" y="197" text-anchor="middle" fill="#555" font-size="11">may stutter</text>
+</g>
+<path d="M485 104 V128 H200 V150" stroke="#10b981" stroke-width="1.6" fill="none"/><path d="M485 128 H370 V150" stroke="#f59e0b" stroke-width="1.6" fill="none"/><path d="M485 128 H535 V150" stroke="#ef4444" stroke-width="1.6" fill="none"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+</svg><figcaption>圖1：檢測流程——讀取本機引數 → 對照官方要求 → 給出就緒結論</figcaption></figure>
+<h2>各項硬體指標如何影響流暢度</h2><p>CPU 核數與 VT 決定模擬器能否高效虛擬化安卓系統、影響多開數量；記憶體決定可同時執行多少應用與開多少分身；顯示卡(GPU)決定畫面渲染與高幀率遊戲表現；磁碟建議用 SSD 以加快載入。任一項偏低都會成為瓶頸。</p>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How each hardware part affects the emulator" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">What each part affects</text>
+<g font-family="system-ui,Arial" font-size="12.5">
+<rect x="20" y="44" width="160" height="86" rx="10" fill="#ffedd5" stroke="#fed7aa"/><text x="34" y="68" font-weight="700" fill="#9a3412">CPU + VT</text><text x="34" y="90" fill="#444" font-size="11">virtualization</text><text x="34" y="108" fill="#444" font-size="11">multi-instance count</text>
+<rect x="195" y="44" width="160" height="86" rx="10" fill="#fef9c3" stroke="#fde68a"/><text x="209" y="68" font-weight="700" fill="#854d0e">RAM</text><text x="209" y="90" fill="#444" font-size="11">apps open at once</text><text x="209" y="108" fill="#444" font-size="11">number of clones</text>
+<rect x="370" y="44" width="160" height="86" rx="10" fill="#dbeafe" stroke="#bfdbfe"/><text x="384" y="68" font-weight="700" fill="#1d4ed8">GPU</text><text x="384" y="90" fill="#444" font-size="11">rendering / FPS</text><text x="384" y="108" fill="#444" font-size="11">high-end games</text>
+<rect x="545" y="44" width="155" height="86" rx="10" fill="#dcfce7" stroke="#bbf7d0"/><text x="559" y="68" font-weight="700" fill="#15803d">Disk (SSD)</text><text x="559" y="90" fill="#444" font-size="11">load speed</text><text x="559" y="108" fill="#444" font-size="11">install ~5GB</text>
+</g>
+<rect x="20" y="150" width="680" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="36" y="176" font-family="system-ui,Arial" font-size="13" font-weight="700" fill="#334155">MuMu Player (Android emulator)</text>
+<text x="36" y="196" font-family="system-ui,Arial" font-size="11.5" fill="#64748b">Any single weak part becomes the bottleneck for smoothness and multi-instancing.</text>
+<defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+<path d="M100 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M275 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M450 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M622 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/>
+</svg><figcaption>圖2：CPU / 記憶體 / 顯示卡 / 磁碟各自如何影響 MuMu 模擬器的流暢度與多開</figcaption></figure>
+<figure><picture><source type="image/webp" srcset="/img/specs.webp"><img src="/img/specs.png" alt="MuMu 模擬器最低與推薦配置對照圖" width="1120" height="600" loading="lazy"></picture><figcaption>MuMu 模擬器 Windows 版最低與推薦配置一覽</figcaption></figure>
+<section id="data2026">
+<h2>2026 年主流電腦配置就緒度估算</h2><p>結合 Steam 2026 年 5 月硬體調查（玩家樣本）可大致估算當前電腦達到 MuMu 模擬器門檻的比例：約八成機器已是 4 核及以上，約 78% 擁有 16GB 及以上記憶體，逾九成執行 Windows 10/11 64 位。換言之，多數較新的電腦都具備流暢執行 MuMu 的硬體基礎。</p>
+<table class="data9"><tr><th>專案</th><th>2026</th></tr><tr><td>4 核及以上 CPU 佔比（Steam 2026-05）</td><td>≈ 79.5%</td></tr><tr><td>16GB 及以上記憶體佔比</td><td>78.0%</td></tr><tr><td>Windows 10/11 64 位佔比</td><td>93.8%</td></tr><tr><td>1080p 主流解析度佔比</td><td>51.9%</td></tr></table>
+<p class="note" data-role="estimate-note">估算·非一手：資料來源自 Steam 硬體調查（樣本偏向遊戲玩家，非全體 PC），僅作就緒面參考，不代表你這臺電腦的實測結果。</p></section>
+<div class="cta"><h2>下載 MuMu 模擬器</h2><p>配置達標了？直接從官方下載頁獲取最新版 MuMu 模擬器，免費暢玩安卓手遊：</p><a class="dl" href="https://mumuemulator.com/download/">下載 MuMu 模擬器（官方）</a></div>
+<h2>常見問題</h2><details><summary>MuMu 模擬器對電腦配置要求高嗎？</summary><p>不算高。官方最低為雙核 CPU、4GB 記憶體、GTX 950 級顯示卡；但要流暢多開，建議 4 核以上、8GB 記憶體並開啟 VT 虛擬化。</p></details><details><summary>為什麼一定要開啟 VT（虛擬化）？</summary><p>VT（Intel VT / AMD SVM）讓 MuMu 高效虛擬化安卓系統。官方明確開啟 VT 能顯著提升效能、減少卡頓；未開啟時會明顯變慢。</p></details><details><summary>瀏覽器能檢測我是否開啟了 VT 嗎？</summary><p>不能。網頁無法讀取 BIOS 虛擬化狀態。請在 Windows 工作管理員→效能→CPU 檢視“虛擬化:已啟用”，或進 BIOS 開啟。</p></details><details><summary>這個檢測準確嗎？</summary><p>它讀取瀏覽器可見的引數（核數、記憶體、WebGL 顯示卡名、解析度）做對照，可作初步參考；記憶體經瀏覽器上限為 8GB、且無法讀 VT，實際以系統資訊為準。</p></details><details><summary>4GB 記憶體能執行 MuMu 模擬器嗎？</summary><p>能執行單開，但多開或大型遊戲會吃緊。推薦 8GB 以上以獲得穩定多開體驗。</p></details><details><summary>檢測會上傳我的電腦資訊嗎？</summary><p>不會。全部檢測在你本地瀏覽器內完成，不上傳、不儲存、不安裝任何程式。</p></details><details><summary>整合顯示卡能玩嗎？</summary><p>輕度遊戲可以；高畫質或高幀率遊戲建議用 GTX 1050 以上的獨立顯示卡。</p></details>
+<h2>常見場景速判</h2><ul class="scenes"><li>核數顯示為 2、想多開：先確認是否開啟 VT；2 核多開會很吃力，建議單開或升級到 4 核以上。</li><li>記憶體只有 4GB：可單開較輕的遊戲；同時開多個分身或後臺掛機建議加到 8GB 以上。</li><li>WebGL 顯示為軟體渲染(SwiftShader)：說明瀏覽器未啟用硬體加速或無可用 GPU，模擬器畫面會很慢，先在系統裡開啟硬體加速並更新顯示卡驅動。</li><li>筆記本有獨顯但檢測到的是 Intel 核顯：瀏覽器可能用了核顯，玩遊戲時確保 MuMu 走獨立顯示卡（在顯示卡控制面板或 Windows 圖形設定裡指定）。</li></ul>
+<div class="related"><h2>相關</h2><ul>
+<li><a href="/zh-tw/about-chenmo/">關於作者：陳默</a></li>
+<li><a href="https://www.mumuplayer.com/" rel="nofollow">MuMuPlayer official system requirements</a></li>
+<li><a href="https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam" rel="nofollow">Steam Hardware Survey</a></li>
+<li><a href="https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency" rel="nofollow">MDN: navigator.hardwareConcurrency</a></li>
+</ul></div>
+</main>
+<footer>資料整理自 MuMu 模擬器官網與 MuMuPlayer 官方系統需求、Steam 2026 硬體調查；檢測項基於瀏覽器標準 API，僅供參考。<br>作者：陳默 · 評測編輯 · MIT License</footer>
+</div>
+<script>window.LABELS={"metric": "檢測項", "need": "MuMu 要求", "yours": "你的電腦", "detecting": "正在檢測你的裝置…", "unknown": "未知", "verdict_ready": "就緒:可流暢執行", "verdict_marginal": "勉強:基本可玩,建議升級", "verdict_poor": "偏低:可能卡頓", "advice_ready": "你的電腦達到 MuMu 推薦配置,可放心多開執行安卓遊戲。", "advice_marginal": "達到最低要求但部分指標偏低,單開較輕的遊戲可行,多開或大型遊戲可能卡頓。", "advice_poor": "部分關鍵指標低於最低要求,執行可能明顯示卡頓,建議升級,或先開啟 VT 與硬體加速。", "m_cores": "CPU 邏輯核數", "m_mem": "記憶體(瀏覽器可見)", "m_gpu": "顯示卡(WebGL)", "m_screen": "螢幕解析度", "m_os": "系統 / 瀏覽器", "vt_note": "注:瀏覽器無法讀取 VT 虛擬化是否開啟,請在工作管理員或 BIOS 中核對。", "st_ok": "達標", "st_warn": "勉強", "st_low": "偏低"};</script><script src="/app.js"></script>
+</body></html>
