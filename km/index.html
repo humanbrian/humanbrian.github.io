@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="km"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ពិនិត្យតម្រូវការប្រព័ន្ធ MuMu Player - សាកល្បងថាតើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការកម្មវិធីត្រាប់តាម Android ដែរឬទេ</title>
+<meta name="description" content="បើក និងសាកល្បងភ្លាមៗ៖ ទំព័រនេះអានស្នូល CPU, RAM, GPU (WebGL) និងអេក្រង់របស់អ្នក បន្ទាប់មកពិនិត្យពួកវាប្រឆាំងនឹងតម្រូវការផ្លូវការ MuMu Player (4 cores + VT, 4GB+, GTX 950+) ដើម្បីប្រាប់ថាតើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការកម្មវិធីត្រាប់តាម Android យ៉ាងរលូនឬអត់។ ដំណើរការក្នុងមូលដ្ឋាន មិនមានអ្វីផ្ទុកឡើងទេ។">
+<meta name="author" content="陈默">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="website"><meta property="og:title" content="ពិនិត្យតម្រូវការប្រព័ន្ធ MuMu Player - សាកល្បងថាតើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការកម្មវិធីត្រាប់តាម Android ដែរឬទេ">
+<meta property="og:description" content="បើក និងសាកល្បងភ្លាមៗ៖ ទំព័រនេះអានស្នូល CPU, RAM, GPU (WebGL) និងអេក្រង់របស់អ្នក បន្ទាប់មកពិនិត្យពួកវាប្រឆាំងនឹងតម្រូវការផ្លូវការ MuMu Player (4 cores + VT, 4GB+, GTX 950+) ដើម្បីប្រាប់ថាតើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការកម្មវិធីត្រាប់តាម Android យ៉ាងរលូនឬអត់។ ដំណើរការក្នុងមូលដ្ឋាន មិនមានអ្វីផ្ទុកឡើងទេ។">
+<meta property="og:locale" content="km_KH"><meta property="og:image" content="https://humanbrian.github.io/img/cover.png">
+<meta property="og:image:width" content="1120"><meta property="og:image:height" content="360">
+<link rel="canonical" href="https://humanbrian.github.io/km/">
+<link rel="alternate" hreflang="zh-Hans" href="https://humanbrian.github.io/">
+<link rel="alternate" hreflang="en" href="https://humanbrian.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://humanbrian.github.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://humanbrian.github.io/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://humanbrian.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://humanbrian.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://humanbrian.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://humanbrian.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://humanbrian.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://humanbrian.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://humanbrian.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://humanbrian.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://humanbrian.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "ពិនិត្យតម្រូវការប្រព័ន្ធ MuMu Player",
+   "url": "https://humanbrian.github.io/km/",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web browser",
+   "inLanguage": "km",
+   "description": "បើក និងសាកល្បងភ្លាមៗ៖ ទំព័រនេះអានស្នូល CPU, RAM, GPU (WebGL) និងអេក្រង់របស់អ្នក បន្ទាប់មកពិនិត្យពួកវាប្រឆាំងនឹងតម្រូវការផ្លូវការ MuMu Player (4 cores + VT, 4GB+, GTX 950+) ដើម្បីប្រាប់ថាតើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការកម្មវិធីត្រាប់តាម Android យ៉ាងរលូនឬអត់។ ដំណើរការក្នុងមូលដ្ឋាន មិនមានអ្វីផ្ទុកឡើងទេ។",
+   "isAccessibleForFree": true,
+   "browserRequirements": "Requires JavaScript and WebGL",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "陈默",
+    "url": "https://humanbrian.github.io/km/about-chenmo/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "km",
+   "url": "https://humanbrian.github.io/km/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "តើ MuMu Player ត្រូវការកុំព្យូទ័រដែលមានថាមពលទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "មិនពិតទេ។ អប្បបរមាជាផ្លូវការគឺ CPU dual-core, RAM 4GB និង GPU ប្រភេទ GTX 950; ប៉ុន្តែសម្រាប់ការដំណើរការច្រើនរលូន 4+ cores, RAM 8GB និង VT ត្រូវបានអនុញ្ញាត។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ហេតុអ្វីបានជាត្រូវបើក ​​VT (និម្មិត)?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "VT (Intel VT / AMD SVM) អនុញ្ញាតឱ្យ MuMu និម្មិតប្រព័ន្ធប្រតិបត្តិការ Android ប្រកបដោយប្រសិទ្ធភាព។ អ្នកលក់បញ្ជាក់ថាការបើកដំណើរការ VT ធ្វើអោយប្រសើរឡើងនូវការអនុវត្ត និងកាត់បន្ថយភាពយឺតយ៉ាវ។ ដោយគ្មានវា កម្មវិធីត្រាប់តាមគឺយឺតគួរឱ្យកត់សម្គាល់។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើកម្មវិធីរុករកអាចរកឃើញថាតើ VT ត្រូវបានបើកទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ទេ គេហទំព័រមួយមិនអាចអានស្ថានភាពនិម្មិត BIOS របស់អ្នកបានទេ។ ពិនិត្យមើល Task Manager, Performance, CPU for Virtualization Enabled ឬបើកវានៅក្នុង BIOS។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើការត្រួតពិនិត្យនេះត្រឹមត្រូវទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "វាអានលក្ខណៈពិសេសដែលអាចមើលឃើញដោយកម្មវិធីរុករកតាមអ៊ីនធឺណិត (ស្នូល អង្គចងចាំ ឈ្មោះ WebGL GPU គុណភាពបង្ហាញ) សម្រាប់ការប្រៀបធៀបរហ័ស។ សូមចំណាំថា អង្គចងចាំដែលរាយការណ៍ដោយកម្មវិធីរុករកតាមអ៊ីនធឺណិតគឺមានទំហំ 8GB ហើយ VT មិនអាចអានបានទេ ដូច្នេះសូមចាត់ទុកព័ត៌មានប្រព័ន្ធជាការអនុញ្ញាត។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើ RAM 4GB អាចដំណើរការ MuMu Player បានទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "វាអាចដំណើរការឧទាហរណ៍តែមួយ ប៉ុន្តែហ្គេមច្រើន ឬហ្គេមធំនឹងតឹង។ 8GB ឬ​ច្រើន​ជាង​នេះ​ត្រូវ​បាន​ផ្ដល់​អនុសាសន៍​សម្រាប់​ការ​បញ្ចូល​ច្រើន​ដែល​មាន​ស្ថិរភាព។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើមូលប្បទានប័ត្រផ្ទុកព័ត៌មានកុំព្យូទ័ររបស់ខ្ញុំទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ទេ អ្វីគ្រប់យ៉ាងដំណើរការក្នុងមូលដ្ឋាននៅក្នុងកម្មវិធីរុករករបស់អ្នក - គ្មានអ្វីត្រូវបានផ្ទុកឡើង រក្សាទុក ឬដំឡើងទេ។"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "តើក្រាហ្វិករួមបញ្ចូលគ្នាអាចគ្រប់គ្រងវាបានដែរឬទេ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ល្បែងពន្លឺ បាទ; សម្រាប់គុណភាពខ្ពស់ ឬអត្រាស៊ុមខ្ពស់ GPU ជាក់លាក់នៃ GTX 1050 ឬខ្ពស់ជាងនេះត្រូវបានណែនាំ។"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head><body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/zh-tw/">繁體中文</a> · <a href="/id/">Bahasa Indonesia</a> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <strong>ភាសាខ្មែរ</strong> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>ពិនិត្យតម្រូវការប្រព័ន្ធ MuMu Player</h1>
+<p class="byline"><a href="/km/about-chenmo/" rel="author">陈默</a> · បានធ្វើបច្ចុប្បន្នភាព 2026-06</p>
+<p>ចង់លេងហ្គេម Android នៅលើកុំព្យូទ័ររបស់អ្នក ប៉ុន្តែបារម្ភថាវាមិនអាចបន្តបានទេ? នេះគឺជាឧបករណ៍បណ្ដាញសុទ្ធ៖ បើកវា ហើយវាអានដោយស្វ័យប្រវត្តិនូវ processor cores អង្គចងចាំ កាតក្រាហ្វិក និងអេក្រង់របស់អ្នក បន្ទាប់មកប្រៀបធៀបពួកវាជាមួយនឹងតម្រូវការផ្លូវការរបស់ MuMu Player ដើម្បីប្រាប់អ្នកថាតើអ្នកអាចដំណើរការ និង multi-instance យ៉ាងរលូន។ អ្វីគ្រប់យ៉ាងដំណើរការក្នុងមូលដ្ឋាននៅក្នុងកម្មវិធីរុករករបស់អ្នក - គ្មានអ្វីត្រូវបានផ្ទុកឡើង ឬដំឡើងទេ។</p>
+<figure><picture><source type="image/webp" srcset="/img/cover.webp"><img src="/img/cover.png" alt="បដាត្រួតពិនិត្យតម្រូវការ MuMu Player" width="1120" height="360" fetchpriority="high"></picture><figcaption>ពិនិត្យលើអ៊ីនធឺណិតថាតើកុំព្យូទ័ររបស់អ្នកបំពេញតាមតម្រូវការ MuMu Player ដែរឬទេ</figcaption></figure>
+<h2>តើកុំព្យូទ័ររបស់អ្នកអាចដំណើរការ MuMu Player យ៉ាងរលូនទេ?</h2><p>កាតខាងក្រោមរាយបញ្ជីលក្ខណៈពិសេសសំខាន់ៗរបស់កុំព្យូទ័ររបស់អ្នកដោយស្វ័យប្រវត្តិ ហើយប្រៀបធៀបនីមួយៗប្រឆាំងនឹងតម្រូវការអប្បបរមាផ្លូវការ និងតម្រូវការដែលបានណែនាំ MuMu ។ ពណ៌បៃតងមានន័យថាវាជួបរបារ, amber មានន័យថាបន្ទាត់ព្រំដែន, ក្រហមមានន័យថាខាងក្រោម spec ។ ធាតុដែលកម្មវិធីរុករកតាមអ៊ីនធឺណិតមិនអាចអានបាន (ដូចជាថាតើ VT និម្មិតត្រូវបានបើកទេ) ត្រូវបានដាក់ទង់សម្រាប់ការត្រួតពិនិត្យដោយដៃ។</p>
+<div class="rk" id="rk"><div id="rk-out">កំពុងរកឃើញឧបករណ៍របស់អ្នក...</div></div>
+<h2>តម្រូវការប្រព័ន្ធផ្លូវការ MuMu Player</h2><p>យោងទៅតាមគេហទំព័រកម្មវិធីត្រាប់តាម MuMu និងតម្រូវការប្រព័ន្ធផ្លូវការ MuMuPlayer របារវីនដូគឺប្រហែលដូចខាងក្រោម។ ស៊ីភីយូ 4-core ដែលមាន VT បើកដំណើរការ និង RAM 4GB ឬច្រើនជាងនេះ គឺជាគន្លឹះក្នុងការដំណើរការរលូន។ RAM 8GB និង GPU ពិសេសត្រូវបានណែនាំសម្រាប់បទពិសោធន៍ប្រើប្រាស់ច្រើនកាន់តែប្រសើរ។</p>
+<table class="req"><tr><th>ធាតុ</th><th>អប្បបរមា</th><th>បានណែនាំ</th></tr><tr><td>ប្រព័ន្ធប្រតិបត្តិការ</td><td>Windows 7 / 8 / 10</td><td>Windows 10 / 11 64-bit</td></tr><tr><td>ឧបករណ៍ដំណើរការ (ស៊ីភីយូ)</td><td>Dual-core ឬខ្ពស់ជាងនេះ។</td><td>i5-7500 / 4 cores ឬច្រើនជាងនេះ + VT ត្រូវបានបើក</td></tr><tr><td>អង្គចងចាំ (RAM)</td><td>4 ជីកាបៃ</td><td>8 GB ឬច្រើនជាងនេះ។</td></tr><tr><td>ក្រាហ្វិក (GPU)</td><td>ថ្នាក់ GTX 950</td><td>GTX 1050 ឬខ្ពស់ជាងនេះ / GPU ឧទ្ទិស</td></tr><tr><td>API ក្រាហ្វិក</td><td>OpenGL 4.x</td><td>DirectX 11.0 / OpenGL 4.x</td></tr><tr><td>ទំហំថាស</td><td>ប្រហែល 5 GB ឥតគិតថ្លៃ</td><td>SSD + 5 GB ឬច្រើនជាងនេះ។</td></tr></table>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Device readiness detection flow" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">Readiness detection flow</text>
+<rect x="20" y="44" width="150" height="60" rx="10" fill="#eef4ff" stroke="#cfe0ff"/><text x="95" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#1d4ed8">Read this PC</text><text x="95" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#555">cores / RAM / GPU</text>
+<path d="M170 74 H210" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="210" y="44" width="160" height="60" rx="10" fill="#f7f8fb" stroke="#e2e8f0"/><text x="290" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#334155">Compare to</text><text x="290" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#64748b">MuMu requirements</text>
+<path d="M370 74 H410" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="410" y="44" width="150" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="485" y="78" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#047857">Verdict</text>
+<g font-family="system-ui,Arial" font-size="12">
+<rect x="120" y="150" width="160" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="200" y="178" text-anchor="middle" font-weight="700" fill="#047857">Ready</text><text x="200" y="197" text-anchor="middle" fill="#555" font-size="11">4+ cores, 8GB, dGPU</text>
+<rect x="290" y="150" width="160" height="60" rx="10" fill="#fffbeb" stroke="#fde68a"/><text x="370" y="178" text-anchor="middle" font-weight="700" fill="#92400e">Borderline</text><text x="370" y="197" text-anchor="middle" fill="#555" font-size="11">meets minimum</text>
+<rect x="460" y="150" width="150" height="60" rx="10" fill="#fef2f2" stroke="#fecaca"/><text x="535" y="178" text-anchor="middle" font-weight="700" fill="#991b1b">Below spec</text><text x="535" y="197" text-anchor="middle" fill="#555" font-size="11">may stutter</text>
+</g>
+<path d="M485 104 V128 H200 V150" stroke="#10b981" stroke-width="1.6" fill="none"/><path d="M485 128 H370 V150" stroke="#f59e0b" stroke-width="1.6" fill="none"/><path d="M485 128 H535 V150" stroke="#ef4444" stroke-width="1.6" fill="none"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+</svg><figcaption>រូបភាពទី 1: លំហូរការរកឃើញ - អានលក្ខណៈបច្ចេកទេសរបស់អ្នក ប្រៀបធៀបទៅនឹងតម្រូវការផ្លូវការ ត្រឡប់សាលក្រមត្រៀមខ្លួន។</figcaption></figure>
+<h2>របៀបដែលម៉ែត្រផ្នែករឹងនីមួយៗប៉ះពាល់ដល់ភាពរលោង</h2><p>ស្នូលស៊ីភីយូ និង VT កំណត់ពីរបៀបដែលកម្មវិធីត្រាប់តាមធ្វើនិម្មិតប្រព័ន្ធប្រតិបត្តិការ Android ប្រកបដោយប្រសិទ្ធភាព និងចំនួនករណីដែលអ្នកអាចដំណើរការបាន។ RAM សម្រេចថាតើកម្មវិធី និងក្លូនប៉ុន្មានដំណើរការក្នុងពេលតែមួយ។ GPU ជំរុញការបង្ហាញ និងហ្គេមដែលមានអត្រាស៊ុមខ្ពស់; SSD បង្កើនល្បឿនការផ្ទុក។ តំណខ្សោយណាមួយក្លាយជាឧបសគ្គ។</p>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How each hardware part affects the emulator" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">What each part affects</text>
+<g font-family="system-ui,Arial" font-size="12.5">
+<rect x="20" y="44" width="160" height="86" rx="10" fill="#ffedd5" stroke="#fed7aa"/><text x="34" y="68" font-weight="700" fill="#9a3412">CPU + VT</text><text x="34" y="90" fill="#444" font-size="11">virtualization</text><text x="34" y="108" fill="#444" font-size="11">multi-instance count</text>
+<rect x="195" y="44" width="160" height="86" rx="10" fill="#fef9c3" stroke="#fde68a"/><text x="209" y="68" font-weight="700" fill="#854d0e">RAM</text><text x="209" y="90" fill="#444" font-size="11">apps open at once</text><text x="209" y="108" fill="#444" font-size="11">number of clones</text>
+<rect x="370" y="44" width="160" height="86" rx="10" fill="#dbeafe" stroke="#bfdbfe"/><text x="384" y="68" font-weight="700" fill="#1d4ed8">GPU</text><text x="384" y="90" fill="#444" font-size="11">rendering / FPS</text><text x="384" y="108" fill="#444" font-size="11">high-end games</text>
+<rect x="545" y="44" width="155" height="86" rx="10" fill="#dcfce7" stroke="#bbf7d0"/><text x="559" y="68" font-weight="700" fill="#15803d">Disk (SSD)</text><text x="559" y="90" fill="#444" font-size="11">load speed</text><text x="559" y="108" fill="#444" font-size="11">install ~5GB</text>
+</g>
+<rect x="20" y="150" width="680" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="36" y="176" font-family="system-ui,Arial" font-size="13" font-weight="700" fill="#334155">MuMu Player (Android emulator)</text>
+<text x="36" y="196" font-family="system-ui,Arial" font-size="11.5" fill="#64748b">Any single weak part becomes the bottleneck for smoothness and multi-instancing.</text>
+<defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+<path d="M100 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M275 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M450 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M622 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/>
+</svg><figcaption>រូបភាពទី 2: របៀបដែល CPU, RAM, GPU និងឌីសនីមួយៗប៉ះពាល់ដល់ភាពរលូន MuMu Player និង multi-instancing ។</figcaption></figure>
+<figure><picture><source type="image/webp" srcset="/img/specs.webp"><img src="/img/specs.png" alt="MuMu Player អប្បបរមាធៀបនឹងតារាងលក្ខណៈពិសេសដែលបានណែនាំ" width="1120" height="600" loading="lazy"></picture><figcaption>MuMu Player សម្រាប់ Windows៖ លក្ខណៈបច្ចេកទេសអប្បបរមា និងដែលបានណែនាំភ្លាមៗ</figcaption></figure>
+<section id="data2026">
+<h2>ការប៉ាន់ស្មានការត្រៀមខ្លួនសម្រាប់ឆ្នាំ 2026 សម្រាប់កុំព្យូទ័រដែលកំពុងពេញនិយម</h2><p>ដោយប្រើការស្ទង់មតិផ្នែករឹង Steam ពីខែឧសភា ឆ្នាំ 2026 (គំរូអ្នកលេងហ្គេម) យើងអាចប៉ាន់ប្រមាណបានថាតើមានកុំព្យូទ័រប៉ុន្មានគ្រឿងដែលសម្អាតរបារ MuMu Player ថ្ងៃនេះ៖ ប្រហែល 80% មានស្នូល 4 ឬច្រើនរួចហើយ ប្រហែល 78% មាន RAM 16GB ឬច្រើនជាងនេះ ហើយជាង 90% ដំណើរការ 64-bit Windows 10/11។ សរុបមក កុំព្យូទ័រថ្មីៗភាគច្រើនមានមូលដ្ឋានផ្នែករឹងរួចហើយ ដើម្បីដំណើរការ MuMu យ៉ាងរលូន។</p>
+<table class="data9"><tr><th>ធាតុ</th><th>2026</th></tr><tr><td>ចែករំលែកជាមួយស្នូលស៊ីភីយូ 4+ (Steam 2026-05)</td><td>≈ 79.5%</td></tr><tr><td>ចែករំលែកជាមួយ RAM 16GB+</td><td>78.0%</td></tr><tr><td>ចែករំលែកនៅលើ 64 ប៊ីត Windows 10/11</td><td>93.8%</td></tr><tr><td>ចែករំលែកនៅលើ 1080p ជាគុណភាពបង្ហាញចម្បង</td><td>51.9%</td></tr></table>
+<p class="note" data-role="estimate-note">ការប៉ាន់ប្រមាណ មិនមែនដោយដៃផ្ទាល់ទេ៖ តួលេខបានមកពី Steam Hardware Survey (គំរូដែលអ្នកលេងសើច មិនមែនកុំព្យូទ័រទាំងអស់ទេ); ពួកវាជាឯកសារយោងសម្រាប់ការត្រៀមលក្ខណៈ-ទេសភាពតែប៉ុណ្ណោះ ហើយមិនឆ្លុះបញ្ចាំងពីការវាស់វែងនៃម៉ាស៊ីនផ្ទាល់ខ្លួនរបស់អ្នកទេ។</p></section>
+<div class="cta"><h2>ទាញយក MuMu Player</h2><p>ពិនិត្យមើលលក្ខណៈពិសេស? ទាញយក MuMu Player ចុងក្រោយបំផុតត្រង់ពីទំព័រទាញយកផ្លូវការ ហើយលេងហ្គេម Android ដោយឥតគិតថ្លៃ៖</p><a class="dl" href="https://mumuemulator.com/download/">ទាញយក MuMu Player (ផ្លូវការ)</a></div>
+<h2>សំណួរដែលគេសួរញឹកញាប់</h2><details><summary>តើ MuMu Player ត្រូវការកុំព្យូទ័រដែលមានថាមពលទេ?</summary><p>មិនពិតទេ។ អប្បបរមាជាផ្លូវការគឺ CPU dual-core, RAM 4GB និង GPU ប្រភេទ GTX 950; ប៉ុន្តែសម្រាប់ការដំណើរការច្រើនរលូន 4+ cores, RAM 8GB និង VT ត្រូវបានអនុញ្ញាត។</p></details><details><summary>ហេតុអ្វីបានជាត្រូវបើក ​​VT (និម្មិត)?</summary><p>VT (Intel VT / AMD SVM) អនុញ្ញាតឱ្យ MuMu និម្មិតប្រព័ន្ធប្រតិបត្តិការ Android ប្រកបដោយប្រសិទ្ធភាព។ អ្នកលក់បញ្ជាក់ថាការបើកដំណើរការ VT ធ្វើអោយប្រសើរឡើងនូវការអនុវត្ត និងកាត់បន្ថយភាពយឺតយ៉ាវ។ ដោយគ្មានវា កម្មវិធីត្រាប់តាមគឺយឺតគួរឱ្យកត់សម្គាល់។</p></details><details><summary>តើកម្មវិធីរុករកអាចរកឃើញថាតើ VT ត្រូវបានបើកទេ?</summary><p>ទេ គេហទំព័រមួយមិនអាចអានស្ថានភាពនិម្មិត BIOS របស់អ្នកបានទេ។ ពិនិត្យមើល Task Manager, Performance, CPU for Virtualization Enabled ឬបើកវានៅក្នុង BIOS។</p></details><details><summary>តើការត្រួតពិនិត្យនេះត្រឹមត្រូវទេ?</summary><p>វាអានលក្ខណៈពិសេសដែលអាចមើលឃើញដោយកម្មវិធីរុករកតាមអ៊ីនធឺណិត (ស្នូល អង្គចងចាំ ឈ្មោះ WebGL GPU គុណភាពបង្ហាញ) សម្រាប់ការប្រៀបធៀបរហ័ស។ សូមចំណាំថា អង្គចងចាំដែលរាយការណ៍ដោយកម្មវិធីរុករកតាមអ៊ីនធឺណិតគឺមានទំហំ 8GB ហើយ VT មិនអាចអានបានទេ ដូច្នេះសូមចាត់ទុកព័ត៌មានប្រព័ន្ធជាការអនុញ្ញាត។</p></details><details><summary>តើ RAM 4GB អាចដំណើរការ MuMu Player បានទេ?</summary><p>វាអាចដំណើរការឧទាហរណ៍តែមួយ ប៉ុន្តែហ្គេមច្រើន ឬហ្គេមធំនឹងតឹង។ 8GB ឬ​ច្រើន​ជាង​នេះ​ត្រូវ​បាន​ផ្ដល់​អនុសាសន៍​សម្រាប់​ការ​បញ្ចូល​ច្រើន​ដែល​មាន​ស្ថិរភាព។</p></details><details><summary>តើមូលប្បទានប័ត្រផ្ទុកព័ត៌មានកុំព្យូទ័ររបស់ខ្ញុំទេ?</summary><p>ទេ អ្វីគ្រប់យ៉ាងដំណើរការក្នុងមូលដ្ឋាននៅក្នុងកម្មវិធីរុករករបស់អ្នក - គ្មានអ្វីត្រូវបានផ្ទុកឡើង រក្សាទុក ឬដំឡើងទេ។</p></details><details><summary>តើក្រាហ្វិករួមបញ្ចូលគ្នាអាចគ្រប់គ្រងវាបានដែរឬទេ?</summary><p>ល្បែងពន្លឺ បាទ; សម្រាប់គុណភាពខ្ពស់ ឬអត្រាស៊ុមខ្ពស់ GPU ជាក់លាក់នៃ GTX 1050 ឬខ្ពស់ជាងនេះត្រូវបានណែនាំ។</p></details>
+<h2>ការត្រួតពិនិត្យពិភពពិតរហ័ស</h2><ul class="scenes"><li>ស្នូលបង្ហាញ 2 ហើយអ្នកចង់បានពហុឧទាហរណ៍៖ ដំបូងបញ្ជាក់ថា VT បើក។ 2 cores តស៊ូជាមួយ multi-instancing ដូច្នេះចូលចិត្ត instance តែមួយ ឬ upgrade ទៅ 4 cores ឬច្រើនជាងនេះ។</li><li>មានតែ RAM 4GB៖ ហ្គេមស្រាលជាងមុនតែមួយគឺល្អ; សម្រាប់ក្លូនមួយចំនួន ឬផ្ទៃខាងក្រោយទំនេរ បន្ថែមទំហំផ្ទុករហូតដល់ 8GB ឬច្រើនជាងនេះ។</li><li>WebGL បង្ហាញការបង្ហាញកម្មវិធី (SwiftShader)៖ កម្មវិធីរុករកតាមអ៊ីនធឺណិតមិនមាន GPU ឬ Hardware បង្កើនល្បឿនទេ ដូច្នេះកម្មវិធីត្រាប់តាមនឹងយឺត។ បើកការបង្កើនល្បឿនផ្នែករឹង និងធ្វើបច្ចុប្បន្នភាពកម្មវិធីបញ្ជា GPU របស់អ្នកជាមុនសិន។</li><li>កុំព្យូទ័រយួរដៃមាន GPU ដាច់ដោយឡែក ប៉ុន្តែការពិនិត្យឃើញក្រាហ្វិករួមបញ្ចូល Intel៖ កម្មវិធីរុករកអាចប្រើ iGPU ។ ត្រូវប្រាកដថា MuMu ប្រើ GPU ដាច់ដោយឡែក (កំណត់វានៅក្នុងផ្ទាំងបញ្ជា GPU ឬការកំណត់ក្រាហ្វិកវីនដូ) ។</li></ul>
+<div class="related"><h2>ពាក់ព័ន្ធ</h2><ul>
+<li><a href="/km/about-chenmo/">អំពីអ្នកនិពន្ធ: Chen Mo</a></li>
+<li><a href="https://www.mumuplayer.com/" rel="nofollow">MuMuPlayer official system requirements</a></li>
+<li><a href="https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam" rel="nofollow">Steam Hardware Survey</a></li>
+<li><a href="https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency" rel="nofollow">MDN: navigator.hardwareConcurrency</a></li>
+</ul></div>
+</main>
+<footer>ចងក្រងចេញពីគេហទំព័រកម្មវិធីត្រាប់តាម MuMu និងតម្រូវការប្រព័ន្ធផ្លូវការ MuMuPlayer បូកនឹង Steam 2026 Hardware Survey; ការរកឃើញប្រើ APIs កម្មវិធីរុករកតាមអ៊ីនធឺណិតស្តង់ដារ និងសម្រាប់តែជាឯកសារយោងប៉ុណ្ណោះ។<br>ដោយ Chen Mo · អ្នកកែសម្រួលពិនិត្យ · MIT License</footer>
+</div>
+<script>window.LABELS={"metric": "ម៉ែត្រ", "need": "MuMu ត្រូវការ", "yours": "កុំព្យូទ័ររបស់អ្នក។", "detecting": "កំពុងរកឃើញឧបករណ៍របស់អ្នក...", "unknown": "មិនស្គាល់", "verdict_ready": "រួចរាល់៖ ដំណើរការដោយរលូន", "verdict_marginal": "បន្ទាត់ព្រំដែន៖ អាចលេងបាន ណែនាំឲ្យធ្វើបច្ចុប្បន្នភាព", "verdict_poor": "លក្ខណៈ​ពិសេស​ខាង​ក្រោម៖ អាច​នឹង​រអាក់រអួល", "advice_ready": "កុំព្យូទ័ររបស់អ្នកបំពេញតាមលក្ខណៈបច្ចេកទេសដែលបានណែនាំ MuMu - ដំណើរការ និងហ្គេម Android ច្រើនដោយទំនុកចិត្ត។", "advice_marginal": "បំពេញតាមអប្បបរមា ប៉ុន្តែម៉ែត្រមួយចំនួនមានកម្រិតទាប។ ហ្គេមស្រាលជាងមុនតែមួយគឺល្អ ហ្គេមច្រើន ឬហ្គេមធំអាចនិយាយលេងបាន។", "advice_poor": "រង្វាស់សំខាន់ៗមួយចំនួនគឺទាបជាងអប្បបរមា។ រំពឹងថានឹងមានការជាប់គាំងគួរឱ្យកត់សម្គាល់ - ធ្វើឱ្យប្រសើរឡើង ឬបើកដំណើរការ VT និងការបង្កើនល្បឿនផ្នែករឹង។", "m_cores": "ស្នូលឡូជីខល CPU", "m_mem": "អង្គចងចាំ (កម្មវិធីរុករកអាចមើលឃើញ)", "m_gpu": "ក្រាហ្វិក (WebGL)", "m_screen": "គុណភាពបង្ហាញអេក្រង់", "m_os": "ប្រព័ន្ធប្រតិបត្តិការ / កម្មវិធីរុករក", "vt_note": "ចំណាំ៖ កម្មវិធីរុករកតាមអ៊ីនធឺណិតមិនអាចអានថាតើ VT និម្មិតបើកឬអត់។ ពិនិត្យ Task Manager ឬ BIOS ។", "st_ok": "យល់ព្រម", "st_warn": "បន្ទាត់ព្រំដែន", "st_low": "ទាប"};</script><script src="/app.js"></script>
+</body></html>
