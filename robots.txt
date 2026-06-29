@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://humanbrian.github.io/sitemap.xml
