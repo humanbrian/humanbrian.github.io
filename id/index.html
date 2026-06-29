@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pemeriksaan Persyaratan Sistem MuMu Player - uji apakah PC Anda dapat menjalankan emulator Android</title>
+<meta name="description" content="Buka dan uji langsung: halaman ini membaca inti CPU, RAM, GPU (WebGL) dan layar Anda, lalu memeriksanya berdasarkan persyaratan resmi MuMu Player (4 inti + VT, 4GB+, GTX 950+) untuk mengetahui apakah PC Anda dapat menjalankan emulator Android dengan lancar. Berjalan secara lokal, tidak ada yang diunggah.">
+<meta name="author" content="陈默">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="website"><meta property="og:title" content="Pemeriksaan Persyaratan Sistem MuMu Player - uji apakah PC Anda dapat menjalankan emulator Android">
+<meta property="og:description" content="Buka dan uji langsung: halaman ini membaca inti CPU, RAM, GPU (WebGL) dan layar Anda, lalu memeriksanya berdasarkan persyaratan resmi MuMu Player (4 inti + VT, 4GB+, GTX 950+) untuk mengetahui apakah PC Anda dapat menjalankan emulator Android dengan lancar. Berjalan secara lokal, tidak ada yang diunggah.">
+<meta property="og:locale" content="id_ID"><meta property="og:image" content="https://humanbrian.github.io/img/cover.png">
+<meta property="og:image:width" content="1120"><meta property="og:image:height" content="360">
+<link rel="canonical" href="https://humanbrian.github.io/id/">
+<link rel="alternate" hreflang="zh-Hans" href="https://humanbrian.github.io/">
+<link rel="alternate" hreflang="en" href="https://humanbrian.github.io/en/">
+<link rel="alternate" hreflang="ja" href="https://humanbrian.github.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://humanbrian.github.io/zh-tw/">
+<link rel="alternate" hreflang="id" href="https://humanbrian.github.io/id/">
+<link rel="alternate" hreflang="th" href="https://humanbrian.github.io/th/">
+<link rel="alternate" hreflang="vi" href="https://humanbrian.github.io/vi/">
+<link rel="alternate" hreflang="ms" href="https://humanbrian.github.io/ms/">
+<link rel="alternate" hreflang="fil" href="https://humanbrian.github.io/fil/">
+<link rel="alternate" hreflang="km" href="https://humanbrian.github.io/km/">
+<link rel="alternate" hreflang="lo" href="https://humanbrian.github.io/lo/">
+<link rel="alternate" hreflang="my" href="https://humanbrian.github.io/my/">
+<link rel="alternate" hreflang="x-default" href="https://humanbrian.github.io/">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "name": "Pemeriksaan Persyaratan Sistem MuMu Player",
+   "url": "https://humanbrian.github.io/id/",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web browser",
+   "inLanguage": "id",
+   "description": "Buka dan uji langsung: halaman ini membaca inti CPU, RAM, GPU (WebGL) dan layar Anda, lalu memeriksanya berdasarkan persyaratan resmi MuMu Player (4 inti + VT, 4GB+, GTX 950+) untuk mengetahui apakah PC Anda dapat menjalankan emulator Android dengan lancar. Berjalan secara lokal, tidak ada yang diunggah.",
+   "isAccessibleForFree": true,
+   "browserRequirements": "Requires JavaScript and WebGL",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "陈默",
+    "url": "https://humanbrian.github.io/id/about-chenmo/"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "inLanguage": "id",
+   "url": "https://humanbrian.github.io/id/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Apakah MuMu Player memerlukan PC yang kuat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tidak terlalu. Minimum resminya adalah CPU dual-core, RAM 4GB, dan GPU kelas GTX 950; tetapi untuk multi-instancing yang lancar, direkomendasikan 4+ core, RAM 8GB, dan VT diaktifkan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mengapa VT (virtualisasi) harus diaktifkan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "VT (Intel VT / AMD SVM) memungkinkan MuMu memvirtualisasikan Android secara efisien. Vendor menyatakan bahwa mengaktifkan VT secara signifikan meningkatkan kinerja dan mengurangi lag; tanpanya emulator akan terasa lebih lambat."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bisakah browser mendeteksi apakah VT diaktifkan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tidak. Halaman web tidak dapat membaca status virtualisasi BIOS Anda. Periksa Task Manager, Performance, CPU untuk Virtualization Enabled, atau aktifkan di BIOS."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Apakah pemeriksaan ini akurat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Itu membaca spesifikasi yang terlihat di browser (core, memori, nama GPU WebGL, resolusi) untuk perbandingan cepat. Perhatikan bahwa memori yang dilaporkan browser dibatasi hingga 8 GB dan VT tidak dapat dibaca, jadi perlakukan informasi sistem sebagai informasi resmi."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bisakah RAM 4GB menjalankan MuMu Player?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ini dapat menjalankan satu instance, tetapi multi-instancing atau game besar akan menjadi ketat. Disarankan 8GB atau lebih untuk multi-instancing yang stabil."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Apakah cek tersebut mengunggah informasi PC saya?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tidak. Semuanya berjalan secara lokal di browser Anda - tidak ada yang diunggah, disimpan, atau diinstal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bisakah grafis terintegrasi mengatasinya?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Permainan ringan, ya; untuk kualitas tinggi atau frame rate tinggi, disarankan menggunakan GPU khusus GTX 1050 atau lebih tinggi."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head><body><div class="wrap"><main>
+<nav class="lang">Language: <a href="/">简体中文</a> · <a href="/en/">English</a> · <a href="/ja/">日本語</a> · <a href="/zh-tw/">繁體中文</a> · <strong>Bahasa Indonesia</strong> · <a href="/th/">ไทย</a> · <a href="/vi/">Tiếng Việt</a> · <a href="/ms/">Bahasa Melayu</a> · <a href="/fil/">Filipino</a> · <a href="/km/">ភាសាខ្មែរ</a> · <a href="/lo/">ພາສາລາວ</a> · <a href="/my/">မြန်မာ</a></nav>
+<h1>Pemeriksaan Persyaratan Sistem MuMu Player</h1>
+<p class="byline"><a href="/id/about-chenmo/" rel="author">陈默</a> · Diperbarui 2026-06</p>
+<p>Ingin memainkan game Android di PC tetapi khawatir tidak bisa mengimbanginya? Ini adalah alat web murni: buka dan secara otomatis membaca inti prosesor, memori, kartu grafis, dan layar Anda, lalu membandingkannya dengan persyaratan resmi MuMu Player untuk memberi tahu Anda apakah Anda dapat menjalankan dan melakukan multi-instance dengan lancar. Semuanya berjalan secara lokal di browser Anda - tidak ada yang diunggah atau diinstal.</p>
+<figure><picture><source type="image/webp" srcset="/img/cover.webp"><img src="/img/cover.png" alt="Spanduk pemeriksa persyaratan MuMu Player" width="1120" height="360" fetchpriority="high"></picture><figcaption>Periksa online apakah PC Anda memenuhi persyaratan MuMu Player</figcaption></figure>
+<h2>Bisakah PC Anda menjalankan MuMu Player dengan lancar?</h2><p>Kartu di bawah secara otomatis mencantumkan spesifikasi kunci PC Anda dan membandingkannya dengan persyaratan minimum dan rekomendasi resmi MuMu. Hijau berarti memenuhi standar, kuning berarti garis batas, merah berarti di bawah spesifikasi. Item yang tidak dapat dibaca oleh browser (seperti apakah virtualisasi VT aktif) ditandai untuk pemeriksaan manual.</p>
+<div class="rk" id="rk"><div id="rk-out">Mendeteksi perangkat Anda...</div></div>
+<h2>Persyaratan sistem resmi MuMu Player</h2><p>Menurut situs emulator MuMu dan persyaratan sistem resmi MuMuPlayer, bilah Windows kira-kira sebagai berikut. CPU 4-inti dengan VT diaktifkan dan RAM 4 GB atau lebih adalah kunci kelancaran pengoperasian; RAM 8GB dan GPU khusus direkomendasikan untuk pengalaman multi-instance yang lebih baik.</p>
+<table class="req"><tr><th>Barang</th><th>Minimal</th><th>Direkomendasikan</th></tr><tr><td>Sistem operasi</td><td>Windows 7 / 8 / 10</td><td>Windows 10 / 11 64-bit</td></tr><tr><td>Prosesor (CPU)</td><td>Dual-core atau lebih tinggi</td><td>i5-7500 / 4 core atau lebih + VT diaktifkan</td></tr><tr><td>Memori (RAM)</td><td>4 GB</td><td>8 GB atau lebih</td></tr><tr><td>Grafik (GPU)</td><td>kelas GTX 950</td><td>GTX 1050 atau lebih tinggi / GPU khusus</td></tr><tr><td>API Grafik</td><td>OpenGL 4.x</td><td>DirectX 11.0 / OpenGL 4.x</td></tr><tr><td>Ruang disk</td><td>Sekitar 5 GB gratis</td><td>SSD + 5 GB atau lebih</td></tr></table>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Device readiness detection flow" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">Readiness detection flow</text>
+<rect x="20" y="44" width="150" height="60" rx="10" fill="#eef4ff" stroke="#cfe0ff"/><text x="95" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#1d4ed8">Read this PC</text><text x="95" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#555">cores / RAM / GPU</text>
+<path d="M170 74 H210" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="210" y="44" width="160" height="60" rx="10" fill="#f7f8fb" stroke="#e2e8f0"/><text x="290" y="70" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#334155">Compare to</text><text x="290" y="90" text-anchor="middle" font-family="system-ui,Arial" font-size="11" fill="#64748b">MuMu requirements</text>
+<path d="M370 74 H410" stroke="#9aa" stroke-width="2" marker-end="url(#a)"/>
+<rect x="410" y="44" width="150" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="485" y="78" text-anchor="middle" font-family="system-ui,Arial" font-size="13" fill="#047857">Verdict</text>
+<g font-family="system-ui,Arial" font-size="12">
+<rect x="120" y="150" width="160" height="60" rx="10" fill="#ecfdf5" stroke="#bbf7e0"/><text x="200" y="178" text-anchor="middle" font-weight="700" fill="#047857">Ready</text><text x="200" y="197" text-anchor="middle" fill="#555" font-size="11">4+ cores, 8GB, dGPU</text>
+<rect x="290" y="150" width="160" height="60" rx="10" fill="#fffbeb" stroke="#fde68a"/><text x="370" y="178" text-anchor="middle" font-weight="700" fill="#92400e">Borderline</text><text x="370" y="197" text-anchor="middle" fill="#555" font-size="11">meets minimum</text>
+<rect x="460" y="150" width="150" height="60" rx="10" fill="#fef2f2" stroke="#fecaca"/><text x="535" y="178" text-anchor="middle" font-weight="700" fill="#991b1b">Below spec</text><text x="535" y="197" text-anchor="middle" fill="#555" font-size="11">may stutter</text>
+</g>
+<path d="M485 104 V128 H200 V150" stroke="#10b981" stroke-width="1.6" fill="none"/><path d="M485 128 H370 V150" stroke="#f59e0b" stroke-width="1.6" fill="none"/><path d="M485 128 H535 V150" stroke="#ef4444" stroke-width="1.6" fill="none"/>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+</svg><figcaption>Gambar 1: alur deteksi - baca spesifikasi Anda, bandingkan dengan persyaratan resmi, kembalikan keputusan kesiapan.</figcaption></figure>
+<h2>Pengaruh setiap metrik perangkat keras terhadap kelancaran</h2><p>Inti CPU dan VT menentukan seberapa efisien emulator memvirtualisasikan Android dan berapa banyak instance yang dapat Anda jalankan; RAM menentukan berapa banyak aplikasi dan klon yang dijalankan sekaligus; GPU menggerakkan rendering dan game dengan kecepatan frame tinggi; SSD mempercepat pemuatan. Setiap mata rantai yang lemah akan menjadi hambatan.</p>
+<figure><svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How each hardware part affects the emulator" style="width:100%;height:auto;border:1px solid #eee;border-radius:12px;background:#fff">
+<text x="20" y="26" font-family="system-ui,Arial" font-size="15" font-weight="700" fill="#1d1d1f">What each part affects</text>
+<g font-family="system-ui,Arial" font-size="12.5">
+<rect x="20" y="44" width="160" height="86" rx="10" fill="#ffedd5" stroke="#fed7aa"/><text x="34" y="68" font-weight="700" fill="#9a3412">CPU + VT</text><text x="34" y="90" fill="#444" font-size="11">virtualization</text><text x="34" y="108" fill="#444" font-size="11">multi-instance count</text>
+<rect x="195" y="44" width="160" height="86" rx="10" fill="#fef9c3" stroke="#fde68a"/><text x="209" y="68" font-weight="700" fill="#854d0e">RAM</text><text x="209" y="90" fill="#444" font-size="11">apps open at once</text><text x="209" y="108" fill="#444" font-size="11">number of clones</text>
+<rect x="370" y="44" width="160" height="86" rx="10" fill="#dbeafe" stroke="#bfdbfe"/><text x="384" y="68" font-weight="700" fill="#1d4ed8">GPU</text><text x="384" y="90" fill="#444" font-size="11">rendering / FPS</text><text x="384" y="108" fill="#444" font-size="11">high-end games</text>
+<rect x="545" y="44" width="155" height="86" rx="10" fill="#dcfce7" stroke="#bbf7d0"/><text x="559" y="68" font-weight="700" fill="#15803d">Disk (SSD)</text><text x="559" y="90" fill="#444" font-size="11">load speed</text><text x="559" y="108" fill="#444" font-size="11">install ~5GB</text>
+</g>
+<rect x="20" y="150" width="680" height="58" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="36" y="176" font-family="system-ui,Arial" font-size="13" font-weight="700" fill="#334155">MuMu Player (Android emulator)</text>
+<text x="36" y="196" font-family="system-ui,Arial" font-size="11.5" fill="#64748b">Any single weak part becomes the bottleneck for smoothness and multi-instancing.</text>
+<defs><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#9aa"/></marker></defs>
+<path d="M100 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M275 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M450 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/><path d="M622 130 V150" stroke="#9aa" stroke-width="1.4" marker-end="url(#b)"/>
+</svg><figcaption>Gambar 2: bagaimana CPU, RAM, GPU, dan disk memengaruhi kelancaran dan multi-instancing MuMu Player.</figcaption></figure>
+<figure><picture><source type="image/webp" srcset="/img/specs.webp"><img src="/img/specs.png" alt="Bagan spesifikasi minimum MuMu Player vs yang direkomendasikan" width="1120" height="600" loading="lazy"></picture><figcaption>MuMu Player untuk Windows: sekilas spesifikasi minimum dan yang direkomendasikan</figcaption></figure>
+<section id="data2026">
+<h2>Perkiraan kesiapan tahun 2026 untuk PC mainstream</h2><p>Dengan menggunakan Survei Perangkat Keras Steam pada Mei 2026 (sampel gamer), kami dapat memperkirakan secara kasar berapa banyak PC yang berhasil melewati batasan MuMu Player saat ini: sekitar 80% sudah memiliki 4 inti atau lebih, sekitar 78% memiliki RAM 16 GB atau lebih, dan lebih dari 90% menjalankan Windows 10/11 64-bit. Singkatnya, sebagian besar PC terbaru sudah memiliki basis perangkat keras untuk menjalankan MuMu dengan lancar.</p>
+<table class="data9"><tr><th>Barang</th><th>2026</th></tr><tr><td>Berbagi dengan 4+ inti CPU (Steam 2026-05)</td><td>≈ 79.5%</td></tr><tr><td>Bagikan dengan RAM 16GB+</td><td>78.0%</td></tr><tr><td>Bagikan di Windows 10/11 64-bit</td><td>93.8%</td></tr><tr><td>Bagikan pada 1080p sebagai resolusi utama</td><td>51.9%</td></tr></table>
+<p class="note" data-role="estimate-note">Perkirakan, bukan langsung: angka berasal dari Survei Perangkat Keras Steam (sampel yang cenderung gamer, tidak semua PC); ini hanyalah referensi lanskap kesiapan dan tidak mencerminkan pengukuran mesin Anda sendiri.</p></section>
+<div class="cta"><h2>Unduh MuMu Player</h2><p>Periksa spesifikasinya? Dapatkan MuMu Player terbaru langsung dari halaman download resmi dan mainkan game Android gratis:</p><a class="dl" href="https://mumuemulator.com/download/">Unduh MuMu Player (resmi)</a></div>
+<h2>Pertanyaan yang sering diajukan</h2><details><summary>Apakah MuMu Player memerlukan PC yang kuat?</summary><p>Tidak terlalu. Minimum resminya adalah CPU dual-core, RAM 4GB, dan GPU kelas GTX 950; tetapi untuk multi-instancing yang lancar, direkomendasikan 4+ core, RAM 8GB, dan VT diaktifkan.</p></details><details><summary>Mengapa VT (virtualisasi) harus diaktifkan?</summary><p>VT (Intel VT / AMD SVM) memungkinkan MuMu memvirtualisasikan Android secara efisien. Vendor menyatakan bahwa mengaktifkan VT secara signifikan meningkatkan kinerja dan mengurangi lag; tanpanya emulator akan terasa lebih lambat.</p></details><details><summary>Bisakah browser mendeteksi apakah VT diaktifkan?</summary><p>Tidak. Halaman web tidak dapat membaca status virtualisasi BIOS Anda. Periksa Task Manager, Performance, CPU untuk Virtualization Enabled, atau aktifkan di BIOS.</p></details><details><summary>Apakah pemeriksaan ini akurat?</summary><p>Itu membaca spesifikasi yang terlihat di browser (core, memori, nama GPU WebGL, resolusi) untuk perbandingan cepat. Perhatikan bahwa memori yang dilaporkan browser dibatasi hingga 8 GB dan VT tidak dapat dibaca, jadi perlakukan informasi sistem sebagai informasi resmi.</p></details><details><summary>Bisakah RAM 4GB menjalankan MuMu Player?</summary><p>Ini dapat menjalankan satu instance, tetapi multi-instancing atau game besar akan menjadi ketat. Disarankan 8GB atau lebih untuk multi-instancing yang stabil.</p></details><details><summary>Apakah cek tersebut mengunggah informasi PC saya?</summary><p>Tidak. Semuanya berjalan secara lokal di browser Anda - tidak ada yang diunggah, disimpan, atau diinstal.</p></details><details><summary>Bisakah grafis terintegrasi mengatasinya?</summary><p>Permainan ringan, ya; untuk kualitas tinggi atau frame rate tinggi, disarankan menggunakan GPU khusus GTX 1050 atau lebih tinggi.</p></details>
+<h2>Pemeriksaan cepat di dunia nyata</h2><ul class="scenes"><li>Inti menunjukkan 2 dan Anda ingin multi-instance: pertama konfirmasikan VT aktif; 2 core kesulitan dengan multi-instancing, jadi pilihlah satu instance atau tingkatkan ke 4 core atau lebih.</li><li>Hanya 4GB RAM: satu game yang lebih ringan sudah cukup; untuk beberapa klon atau keadaan diam di latar belakang, tambahkan hingga 8 GB atau lebih.</li><li>WebGL menunjukkan rendering perangkat lunak (SwiftShader): browser tidak memiliki GPU atau akselerasi perangkat keras yang dapat digunakan, sehingga emulator akan lambat; aktifkan akselerasi perangkat keras dan perbarui driver GPU Anda terlebih dahulu.</li><li>Laptop memiliki GPU terpisah tetapi pemeriksaan menunjukkan grafis terintegrasi Intel: browser mungkin menggunakan iGPU; pastikan MuMu menggunakan GPU diskrit (atur di panel kontrol GPU atau pengaturan grafis Windows).</li></ul>
+<div class="related"><h2>Terkait</h2><ul>
+<li><a href="/id/about-chenmo/">Tentang penulis: Chen Mo</a></li>
+<li><a href="https://www.mumuplayer.com/" rel="nofollow">MuMuPlayer official system requirements</a></li>
+<li><a href="https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam" rel="nofollow">Steam Hardware Survey</a></li>
+<li><a href="https://developer.mozilla.org/docs/Web/API/Navigator/hardwareConcurrency" rel="nofollow">MDN: navigator.hardwareConcurrency</a></li>
+</ul></div>
+</main>
+<footer>Dikompilasi dari situs emulator MuMu dan persyaratan sistem resmi MuMuPlayer, ditambah Survei Perangkat Keras Steam 2026; deteksi menggunakan API browser standar dan hanya untuk referensi.<br>Oleh Chen Mo · editor ulasan · MIT License</footer>
+</div>
+<script>window.LABELS={"metric": "Metrik", "need": "kebutuhan MuMu", "yours": "PC Anda", "detecting": "Mendeteksi perangkat Anda...", "unknown": "Tidak diketahui", "verdict_ready": "Siap: berjalan lancar", "verdict_marginal": "Borderline: dapat dimainkan, disarankan untuk ditingkatkan", "verdict_poor": "Di bawah spesifikasi: mungkin gagap", "advice_ready": "PC Anda memenuhi spesifikasi yang direkomendasikan MuMu - jalankan dan multi-instance game Android dengan percaya diri.", "advice_marginal": "Memenuhi batas minimum namun beberapa metriknya rendah; satu game yang lebih ringan tidak masalah, game multi-instan atau game besar mungkin tersendat.", "advice_poor": "Beberapa metrik utama berada di bawah batas minimum; mengharapkan kegagapan yang nyata - tingkatkan, atau aktifkan VT dan akselerasi perangkat keras terlebih dahulu.", "m_cores": "Inti logis CPU", "m_mem": "Memori (terlihat di browser)", "m_gpu": "Grafik (WebGL)", "m_screen": "Resolusi layar", "m_os": "OS/peramban", "vt_note": "Catatan: browser tidak dapat membaca apakah virtualisasi VT aktif; periksa Task Manager atau BIOS.", "st_ok": "Oke", "st_warn": "Garis Batas", "st_low": "Rendah"};</script><script src="/app.js"></script>
+</body></html>
